@@ -26,12 +26,12 @@ public class MoveSheep : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log("Hit something!");
+        // Debug.Log("Hit something!");
         // if (other.CompareTag("Player"))
         Bark bark = other.gameObject.GetComponentInParent<Bark>();
         if (bark != null && bark.IsBarking)
         {
-            Debug.Log("Hit player!");
+            // Debug.Log("Hit player!");
             // if the other object is the player character
             if (bark.BarkState == Bark.Barks.Go) {
                 Vector2 direction = transform.position - other.transform.position;
