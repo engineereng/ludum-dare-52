@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bark : MonoBehaviour
 {
     // turns bark on every 0.5 seconds,
-    // if the Bark button (space and left click) is pressed
+    // if the Bark button (space and right click) is pressed
     public enum Barks {Stop = 0, Go = 1, NumberOfBarks = 2}
     
     public SpriteRenderer barkRadius;
@@ -22,6 +22,9 @@ public class Bark : MonoBehaviour
     private float nextBark = 0.5f;
     private float myTime = 0.0f;
 
+    // default right now is a cyan blue aura
+    private Color defaultColor = new Color(0.0f, 0.8571167f, 1.0f, 1.0f);
+
     // Update is called once per frame
     void Update()
     {
@@ -31,13 +34,14 @@ public class Bark : MonoBehaviour
             nextBark = myTime + barkDelta;
             barking = true;
             // animate bark
-            barkRadius.color = new Color(barkRadius.color.r, barkRadius.color.g, barkRadius.color.b, 0.8f);
+            // changes to a red aura
+            barkRadius.color = new Color(barkRadius.color.r + 1.0f, barkRadius.color.g - 0.7f, barkRadius.color.b - 1.0f, 0.8f);
             nextBark = nextBark - myTime;
             myTime = 0.0f;
             // Debug.Log("Barking: " + barking);
         } else {
             barking = false;
-            barkRadius.color = new Color(barkRadius.color.r, barkRadius.color.g, barkRadius.color.b, 1.0f);
+            barkRadius.color = defaultColor;
             // Debug.Log("Barking: " + barking);
         }
 
