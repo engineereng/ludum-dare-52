@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 130337080}
   - component: {fileID: 130337079}
   - component: {fileID: 130337078}
+  - component: {fileID: 130337081}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -207,9 +208,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 428977030}
+      - m_Target: {fileID: 130337081}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: startButtonPressed
+        m_MethodName: buttonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -257,52 +258,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130337076}
   m_CullTransparentMesh: 1
---- !u!1 &428977029
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 428977031}
-  - component: {fileID: 428977030}
-  m_Layer: 0
-  m_Name: SceneManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &428977030
+--- !u!114 &130337081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428977029}
+  m_GameObject: {fileID: 130337076}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c102b284c98efad469d13b2c25e21a75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneName: LevelSelectScene
-  creditsSceneName: CreditsScene
---- !u!4 &428977031
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 428977029}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.117692284, y: -0.16606092, z: 0.22749393}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  sceneName: LevelSelectScene
 --- !u!1 &570687369
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,6 +646,7 @@ GameObject:
   - component: {fileID: 1235234475}
   - component: {fileID: 1235234474}
   - component: {fileID: 1235234473}
+  - component: {fileID: 1235234476}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -750,9 +719,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 428977030}
+      - m_Target: {fileID: 1235234476}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: creditsButtonPressed
+        m_MethodName: buttonPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -800,6 +769,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235234471}
   m_CullTransparentMesh: 1
+--- !u!114 &1235234476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235234471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c102b284c98efad469d13b2c25e21a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: CreditsScene
 --- !u!1 &1237188451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1187,6 +1169,7 @@ GameObject:
   - component: {fileID: 1701223169}
   - component: {fileID: 1701223168}
   - component: {fileID: 1701223167}
+  - component: {fileID: 1701223170}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -1259,9 +1242,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 428977030}
+      - m_Target: {fileID: 1701223170}
         m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
-        m_MethodName: quitButtonPressed
+        m_MethodName: quitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1309,6 +1292,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1701223165}
   m_CullTransparentMesh: 1
+--- !u!114 &1701223170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701223165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c102b284c98efad469d13b2c25e21a75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: 
 --- !u!1 &1741967884
 GameObject:
   m_ObjectHideFlags: 0
