@@ -8,7 +8,7 @@ public class ZombieMove: MonoBehaviour
     public float minimum = -5.0f;
     public float maximum =  5.0f;
     public float moveSpeed = 1.0f;
-    public float radius = 3.0f;
+    public float radius = 1.0f;
 
     static float t = 0.5f;
     private Collider2D collision;

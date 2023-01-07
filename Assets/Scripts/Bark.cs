@@ -22,8 +22,8 @@ public class Bark : MonoBehaviour
     private float nextBark = 0.5f;
     private float myTime = 0.0f;
 
-    // default right now is a cyan blue aura
-    private Color defaultColor = new Color(0.0f, 0.8571167f, 1.0f, 1.0f);
+    // default right now is invisible and turns red when on
+    private Color defaultColor = new Color(0.0f, 0.8571167f, 1.0f, 0.0f);
 
     // Update is called once per frame
     void Update()
@@ -35,7 +35,7 @@ public class Bark : MonoBehaviour
             barking = true;
             // animate bark
             // changes to a red aura
-            barkRadius.color = new Color(barkRadius.color.r + 1.0f, barkRadius.color.g - 0.7f, barkRadius.color.b - 1.0f, 0.8f);
+            barkRadius.color = new Color(barkRadius.color.r + 1.0f, barkRadius.color.g - 0.7f, barkRadius.color.b - 1.0f, 0.2f);
             nextBark = nextBark - myTime;
             myTime = 0.0f;
             // Debug.Log("Barking: " + barking);
