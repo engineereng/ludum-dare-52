@@ -27,7 +27,7 @@ public class Hurtable : MonoBehaviour
         sprite.color = new Color(1.0f, 1.0f, 1.0f, 0.7f);
         if (health <= 0) {
             isDead = true;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.8f);
             Die();
         }
         yield return new WaitForSeconds(0.3f);

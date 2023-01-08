@@ -29,10 +29,12 @@ public class ZombieMove: MonoBehaviour
 
     void FixedUpdate() 
     {
+        if(my_rb.velocity == Vector2.zero) {
+            my_rb.velocity = currDirection * moveSpeed;
+        }
         LayerMask layerMask = LayerMask.GetMask("Souls");
         collision = Physics2D.OverlapCircle(transform.position, radius, layerMask);
         if (collision != null && collision.gameObject.tag == "Soul") {
-            // Debug.Log(collision);
             float step = moveSpeed * Time.deltaTime;
             my_rb.velocity = Vector2.zero;
             my_rb.MovePosition(Vector2.MoveTowards(my_rb.position, collision.transform.position, step));
@@ -43,8 +45,10 @@ public class ZombieMove: MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision) 
     {
+        Debug.Log("collided with something");
         if (collision.gameObject.tag == "Obstacles")
         {
+            Debug.Log("collided with wall");
             currDirection = currDirection * -1.0f;
         }
     }
