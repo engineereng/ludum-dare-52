@@ -5,49 +5,86 @@ using UnityEngine;
 public class ZombieMove: MonoBehaviour
 
 {
-    public float minimum = -5.0f;
-    public float maximum =  5.0f;
-    public float moveSpeed = 1.0f;
-    public float radius = 1.0f;
+    [SerializeField] protected float attackDamage = 10f;
+    public float AttackDamage {
+        get {return attackDamage;}
+    }
 
-    static float t = 0.5f;
+    public float moveSpeed = 1.0f;
+    public float radius = 0.5f;
+    public Rigidbody2D my_rb; 
+
     private Collider2D collision;
-    private float relativeMin;
-    private float relativeMax;
+    private Vector2 currDirection;
+    private bool isSoulAttackable;
 
 
     void Start()
     {
-        relativeMax = transform.position.y + maximum;
-        relativeMin = transform.position.y + minimum;
+        my_rb = this.GetComponent<Rigidbody2D>();
+        currDirection = transform.up;
+        my_rb.velocity = currDirection * moveSpeed;
+        
     }
 
     void FixedUpdate() 
     {
-        collision = Physics2D.OverlapCircle(transform.position, radius);
-        if (collision != null && collision.gameObject.GetComponent<MoveSheep>() != null) {
-            Debug.Log(collision);
+        if(my_rb.velocity == Vector2.zero) {
+            my_rb.velocity = currDirection * moveSpeed;
+        }
+        LayerMask layerMask = LayerMask.GetMask("Souls");
+        collision = Physics2D.OverlapCircle(transform.position, radius, layerMask);
+        if (collision != null && collision.gameObject.tag == "Soul") {
             float step = moveSpeed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, collision.transform.position, step);
-            relativeMax = transform.position.y + maximum;
-            relativeMin = transform.position.y + minimum;
-            t = 0.5f;
+            my_rb.velocity = Vector2.zero;
+            my_rb.MovePosition(Vector2.MoveTowards(my_rb.position, collision.transform.position, step));
         } else {
-            transform.position = new Vector2(transform.position.x, Mathf.Lerp(relativeMin, relativeMax, t));
-            t += 0.1f * Time.deltaTime;
-            if (t > 1.0f)
-            {
-                float temp = relativeMax;
-                relativeMax = relativeMin;
-                relativeMin = temp;
-                t = 0.0f;
+            my_rb.velocity = currDirection * moveSpeed;
+        } 
+    }
+
+    void OnCollisionEnter2D(Collision2D collision) 
+    {
+        Debug.Log("collided with something");
+        if (collision.gameObject.tag == "Obstacles")
+        {
+            Debug.Log("collided with wall");
+            currDirection = currDirection * -1.0f;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D collider) {
+        if (collider.gameObject.tag == "Soul") 
+        {
+            Debug.Log("enter attack range");
+            isSoulAttackable = true;
+            StartCoroutine(AttackSequence(collider.transform.parent.gameObject));
+        } 
+    }
+
+    void OnTriggerExit2D(Collider2D collider) {
+        if (collider.gameObject.tag == "Soul") 
+        {
+            Debug.Log("leaving attack range");
+            isSoulAttackable = false;
+        } 
+    }
+
+    IEnumerator AttackSequence(GameObject soul) {
+        Hurtable hurtable = soul.GetComponent<Hurtable>();
+        while (isSoulAttackable) {
+            Debug.Log("Hit " + soul);
+            yield return new WaitForSeconds(1.0f);
+            hurtable.TakeDamage(AttackDamage);
+            if (hurtable.isDead) {
+                isSoulAttackable = false;
             }
         }
+        
     }
 
     void OnDrawGizmosSelected() {
         Gizmos.color = new Color(1.0f, 1.0f, 1.0f, 0.5f);
         Gizmos.DrawSphere(transform.position, radius);
-        Gizmos.DrawLine(new Vector3(transform.position.x, relativeMin, 0.0f), new Vector3(transform.position.x, relativeMax, 0.0f));
     }
 }
