@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class SoulFire : MonoBehaviour
 {
-    void OnTriggerEnter2D (Collider2D other) 
+    void OnCollisionEnter2D (Collision2D collision) 
     {
-        if (other.TryGetComponent<IsSoul>(out var IsSoul))
+        Debug.Log("Collision!");
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Souls"))
         {
-            Debug.Log("Killed soul: " + IsSoul.isSoul);
-            if (IsSoul.isSoul) Destroy(other.gameObject); // fry the soul
+            Debug.Log("Killed soul");
+            Destroy(collision.gameObject); // fry the soul
+            // TODO: add animation of soul burning? Maybe dramatic explosion
         }
     }
 }
