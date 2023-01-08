@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8294741298453112798}
   - component: {fileID: 3588503987050033681}
   - component: {fileID: 9044944024951939213}
+  - component: {fileID: 2372684622997601459}
   m_Layer: 6
   m_Name: Zombie
   m_TagString: Untagged
@@ -121,10 +122,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa1cfe329bf2a734a86da417383c6904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minimum: -0.5
-  maximum: 0.5
+  attackDamage: 10
   moveSpeed: 0.2
   radius: 0.5
+  my_rb: {fileID: 5528206847273070155}
 --- !u!61 &3588503987050033681
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +165,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
+  hurtableObject: {fileID: 0}
+  sprite: {fileID: 0}
+--- !u!95 &2372684622997601459
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252778415368156824}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
