@@ -16,7 +16,7 @@ public class ZombieMove: MonoBehaviour
 
     private Collider2D collision;
     private Vector2 currDirection;
-    private bool isSoulAttackable;
+    private bool isSoulNearby;
 
 
     void Start()
@@ -54,10 +54,10 @@ public class ZombieMove: MonoBehaviour
     }
 
     void OnTriggerEnter2D(Collider2D collider) {
-        if (collider.gameObject.tag == "Soul") 
+        if (collider.gameObject.tag == "Soul" && !isSoulNearby) 
         {
             Debug.Log("enter attack range");
-            isSoulAttackable = true;
+            isSoulNearby = true;
             StartCoroutine(AttackSequence(collider.transform.parent.gameObject));
         } 
     }
@@ -66,21 +66,24 @@ public class ZombieMove: MonoBehaviour
         if (collider.gameObject.tag == "Soul") 
         {
             Debug.Log("leaving attack range");
-            isSoulAttackable = false;
+            isSoulNearby = false;
         } 
     }
 
+
     IEnumerator AttackSequence(GameObject soul) {
-        Hurtable hurtable = soul.GetComponent<Hurtable>();
-        while (isSoulAttackable) {
-            Debug.Log("Hit " + soul);
-            yield return new WaitForSeconds(1.0f);
-            hurtable.TakeDamage(AttackDamage);
-            if (hurtable.isDead) {
-                isSoulAttackable = false;
+        Debug.Log("Hit Sequence Started");
+        Hurtable hurtableSoul = soul.GetComponent<Hurtable>();
+        while (soul.tag == "Soul") {
+            if (soul.tag == "Soul") {
+                yield return new WaitForSeconds(1.0f);
+                Debug.Log("Hit " + soul);
+                hurtableSoul.TakeDamage(AttackDamage);
+            } else if (soul.tag == "Dead") {
+                isSoulNearby = false;
             }
         }
-        
+        yield return new WaitForEndOfFrame();
     }
 
     void OnDrawGizmosSelected() {

@@ -19,10 +19,8 @@ public class SoulAI : MonoBehaviour
 
     private void PerformDetection()
     {
-        Debug.Log("performing detection");
         foreach(Detector detector in detectors)
         {
-            Debug.Log("performing detection");
             detector.Detect(aiData);
         }
     }
