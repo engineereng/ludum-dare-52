@@ -2,46 +2,121 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerMover : MonoBehaviour
 {
+    
+    public Animator animator;
+
+    Vector2 currentMovementInput;
+    Vector3 currentMovement;
+
+    bool isMovementPressed;
+
+
     public enum Facing {Right, Up, Left, Down};
     public Facing facing; // 0 = right, 1 = up, 2 = left, 3 = down
 
     public float movementSpeed = .5f;
 
     public Rigidbody2D rb;
-    Vector2 movement;
 
 
-    // Update is called once per frame
-    void Update()
+    void Awake()
     {
-        movement.x = Input.GetAxisRaw("Horizontal"); // L / R movement; [-1, 1]
-        movement.y = Input.GetAxisRaw("Vertical");
+        rb = gameObject.GetComponent<Rigidbody2D>();
+        animator = gameObject.GetComponent<Animator>();
+
+        
+        rb.rotation = 3;
+        rb.freezeRotation = true;
+    }
+    // Update is called once per frame
+    void handleAnimation()
+    {
+        bool walkUp = animator.GetBool("walkUp");
+        bool walkDown = animator.GetBool("walkDown");
+        bool walkLeft = animator.GetBool("walkLeft");
+        bool walkRight = animator.GetBool("walkRight");
+        bool stopMoving = animator.GetBool("stopMoving");
+
+        if (isMovementPressed && (currentMovementInput.x == 0)  && (currentMovementInput.y == 1 ))
+        {
+            animator.SetBool("walkUp", true);
+        }
+        else if (isMovementPressed && (currentMovementInput.x == 0) && (currentMovementInput.y == -1))
+        {
+            animator.SetBool("walkDown", true);
+        }
+        else if (isMovementPressed && (currentMovementInput.x == 1) && (currentMovementInput.y == 0))
+        {
+            animator.SetBool("walkRight", true);
+        }
+        else if (isMovementPressed && (currentMovementInput.x == -1) && (currentMovementInput.y == 0))
+        {
+            animator.SetBool("walkLeft", true);
+        }
+        else if (!isMovementPressed)
+        {
+            animator.SetBool("walkUp", false);
+            animator.SetBool("walkDown", false);
+            animator.SetBool("walkLeft", false);
+            animator.SetBool("walkRight", false);
+            animator.SetBool("stopMoving", true);
+            
+
+        }
     }
 
+    void Update()
+    {
+
+
+        currentMovementInput.x = Input.GetAxisRaw("Horizontal"); // L / R movement; [-1, 1]
+        currentMovementInput.y = Input.GetAxisRaw("Vertical");
+        if (currentMovementInput.x == 0 && currentMovementInput.y == 0) { 
+            isMovementPressed = false;
+        }
+        if (currentMovementInput.x == 1 || currentMovementInput.y == 1 || currentMovementInput.x == -1 || currentMovementInput.y == -1)
+        { 
+        isMovementPressed = true;
+        }
+    handleAnimation();
+
+    }
+
+    void OnEnable()
+    {
+       
+    }
+    void OnDisable()
+    {
+        
+    }
+    
     void FixedUpdate()
     {
         // Movement
-        rb.MovePosition(rb.position + movement * movementSpeed * Time.deltaTime); // move rigid body to new position
+        rb.MovePosition(rb.position + currentMovementInput * movementSpeed * Time.deltaTime); // move rigid body to new position
         // transform.LookAt(transform.position + rb.velocity);
-        if (movement.x > 0) {
+        if (currentMovementInput.x > 0) {
             facing = Facing.Right;
             SetFacing();
-        } else if (movement.x < 0) {
+        } else if (currentMovementInput.x < 0) {
             facing = Facing.Left;
             SetFacing();
-        } else if (movement.y > 0) {
+        } else if (currentMovementInput.y > 0) {
             facing = Facing.Up;
             SetFacing();
-        } else if (movement.y < 0) {
+        } else if (currentMovementInput.y < 0) {
             facing = Facing.Down;
             SetFacing();
         }
     }
-
+     
     private void SetFacing()
     {
+        /*
         if (facing == Facing.Right) { // right
             rb.rotation = 0;
         } else if (facing == Facing.Up) { // up
@@ -51,5 +126,7 @@ public class PlayerMover : MonoBehaviour
         } else if (facing == Facing.Down) { // down
             rb.rotation = -90;
         }
+        */
     }
+    
 }
