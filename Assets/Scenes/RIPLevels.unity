@@ -133040,4 +133040,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a94dddba85ff3d44f88e028f776b73de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 2069781993}
+--- !u!4 &2069781993 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 808313621884486999, guid: 05f4779284284ab42b2afef308935709, type: 3}
+  m_PrefabInstance: {fileID: 1486738431}
+  m_PrefabAsset: {fileID: 0}
