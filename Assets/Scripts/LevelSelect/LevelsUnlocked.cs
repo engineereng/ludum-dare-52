@@ -15,5 +15,5 @@ public class LevelsUnlocked : MonoBehaviour {
         LevelData data = SaveSystem.LoadLevelsUnlocked();
         highestLevel = data.highestLevel;
     }
-    
+
 }
