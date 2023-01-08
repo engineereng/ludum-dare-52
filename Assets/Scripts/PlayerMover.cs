@@ -20,6 +20,8 @@ public class PlayerMover : MonoBehaviour
     public float movementSpeed = .5f;
 
     public Rigidbody2D rb;
+    public Transform attackPoint;
+    public Transform player;
 
 
     void Awake()
@@ -27,8 +29,7 @@ public class PlayerMover : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
 
-        
-        rb.rotation = 3;
+       
         rb.freezeRotation = true;
     }
     // Update is called once per frame
@@ -43,18 +44,22 @@ public class PlayerMover : MonoBehaviour
         if (isMovementPressed && (currentMovementInput.x == 0)  && (currentMovementInput.y == 1 ))
         {
             animator.SetBool("walkUp", true);
+            attackPoint.position = new Vector3(player.position.x, player.position.y + 0.2f, 0f);
         }
         else if (isMovementPressed && (currentMovementInput.x == 0) && (currentMovementInput.y == -1))
         {
             animator.SetBool("walkDown", true);
+            attackPoint.position = new Vector3(player.position.x, player.position.y - 0.2f, 0f);
         }
         else if (isMovementPressed && (currentMovementInput.x == 1) && (currentMovementInput.y == 0))
         {
             animator.SetBool("walkRight", true);
+            attackPoint.position = new Vector3(player.position.x + 0.2f, player.position.y, 0f);
         }
         else if (isMovementPressed && (currentMovementInput.x == -1) && (currentMovementInput.y == 0))
         {
             animator.SetBool("walkLeft", true);
+            attackPoint.position = new Vector3(player.position.x - 0.2f, player.position.y, 0f);
         }
         else if (!isMovementPressed)
         {
@@ -127,6 +132,7 @@ public class PlayerMover : MonoBehaviour
             rb.rotation = -90;
         }
         */
+        
     }
     
 }
