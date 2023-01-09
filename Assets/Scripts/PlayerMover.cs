@@ -37,14 +37,15 @@ public class PlayerMover : MonoBehaviour
     // Update is called once per frame
     void Attack()
     {
+        Debug.Log("attack animation started");
         if (attackBlocked)
         {
             return;
         }
+        
         animator.SetTrigger("Attack");
         attackBlocked = true;
         StartCoroutine(DelayAttack());
-
     }
     private IEnumerator DelayAttack()
     {
@@ -75,7 +76,7 @@ public class PlayerMover : MonoBehaviour
             animator.SetBool("walkUp", true);
             attackPoint.position = new Vector3(player.position.x, player.position.y + 0.2f, 0f);
 
-            if (mouse.leftButton.wasPressedThisFrame)
+            if (Input.GetButton("Attack"))
             {
                 Attack();
             }
@@ -85,7 +86,7 @@ public class PlayerMover : MonoBehaviour
         {
             animator.SetBool("walkDown", true);
             attackPoint.position = new Vector3(player.position.x, player.position.y - 0.2f, 0f);
-            if (mouse.leftButton.wasPressedThisFrame)
+            if (Input.GetButton("Attack"))
             {
                 Attack();
             }
@@ -94,7 +95,7 @@ public class PlayerMover : MonoBehaviour
         {
             animator.SetBool("walkRight", true);
             attackPoint.position = new Vector3(player.position.x + 0.2f, player.position.y, 0f);
-            if (mouse.leftButton.wasPressedThisFrame)
+            if (Input.GetButton("Attack"))
             {
                 Attack();
             }
@@ -103,10 +104,14 @@ public class PlayerMover : MonoBehaviour
         {
             animator.SetBool("walkLeft", true);
             attackPoint.position = new Vector3(player.position.x - 0.2f, player.position.y, 0f);
-            if (mouse.leftButton.wasPressedThisFrame)
+            if (Input.GetButton("Attack"))
             {
                 Attack();
             }
+        }
+        else if (Input.GetButton("Attack"))
+        {
+            Attack();
         }
         
     }

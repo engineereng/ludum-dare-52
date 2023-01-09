@@ -14,7 +14,7 @@ public class ZombieMove: MonoBehaviour
     public float radius = 0.5f;
     public Rigidbody2D my_rb; 
     public bool isMovementSideways;
-    
+
     private Collider2D collision;
     private Vector2 currDirection;
     private bool isSoulNearby;
@@ -23,7 +23,6 @@ public class ZombieMove: MonoBehaviour
     public Animator animator;
     private float delay = 0.3f;
     private bool attackBlocked;
-    private bool isMovementPressed;
 
     bool Up, Down, Left, Right;
 
@@ -56,18 +55,7 @@ public class ZombieMove: MonoBehaviour
         handleAnimationAttackSoul(compassDirection);
         
     }
-    void Update()
-    {
-        if (my_rb.velocity.x == 0 && my_rb.velocity.y == 0)
-        {
-            isMovementPressed = false;
-        }
-        if (my_rb.velocity.x == 1 || my_rb.velocity.y == 1 || my_rb.velocity.x == -1 || my_rb.velocity.y == -1)
-        {
-            isMovementPressed = true;
-        }
-        //handleAnimation();
-    }
+    
     void FixedUpdate() 
     {
         if(my_rb.velocity == Vector2.zero) {
