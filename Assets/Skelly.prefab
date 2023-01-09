@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5528206847273070155}
   - component: {fileID: 8294741298453112798}
   - component: {fileID: 9044944024951939213}
+  - component: {fileID: 2372684622997601459}
   - component: {fileID: 5005541977793096065}
   - component: {fileID: 6874542052519469101}
-  - component: {fileID: 2372684622997601459}
   m_Layer: 6
   m_Name: Skelly
   m_TagString: Enemy
@@ -102,9 +102,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 0.5
+  m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: 0
+  m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -195,7 +195,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8252778415368156824}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 70e2d1df424d84e4187b20f5b208b06f, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
