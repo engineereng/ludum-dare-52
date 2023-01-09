@@ -8,6 +8,7 @@ TagManager:
   - Map
   - Soul
   - Obstacles
+  - Dead
   layers:
   - Default
   - TransparentFX
@@ -19,28 +20,28 @@ TagManager:
   - Obstacles
   - Souls
   - Triggers
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Dead
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
   m_SortingLayers:
   - name: Default
     uniqueID: 0
