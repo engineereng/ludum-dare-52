@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Hurtable : MonoBehaviour
 {
-    
+    public UnityEvent onDeath;
     [SerializeField] public float health = 100;
     public GameObject hurtableObject;
     public SpriteRenderer sprite;
@@ -37,6 +38,7 @@ public class Hurtable : MonoBehaviour
             hurtableObject.tag = "Dead";
             hurtableObject.layer = deadLayer;
             sprite.enabled = false;
+            onDeath.Invoke();
             yield return new WaitForSeconds(6.0f);
             Die();
         }

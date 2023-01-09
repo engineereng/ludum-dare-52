@@ -9,8 +9,10 @@ public class SoulFire : MonoBehaviour
         Debug.Log("Collision!");
         if (collision.gameObject.layer == LayerMask.NameToLayer("Souls"))
         {
+            collision.gameObject.TryGetComponent<Hurtable>(out Hurtable component);
             Debug.Log("Killed soul");
-            Destroy(collision.gameObject); // fry the soul
+            component.TakeDamage(10000);
+            // Destroy(collision.gameObject); // fry the soul
             // TODO: add animation of soul burning? Maybe dramatic explosion
         }
     }
