@@ -129795,6 +129795,10 @@ PrefabInstance:
       propertyPath: sceneName
       value: Level4
       objectReference: {fileID: 0}
+    - target: {fileID: 4461500116473674055, guid: 02fea563e5649e442842b271a0612183, type: 3}
+      propertyPath: scoreNeeded
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4461500116473674072, guid: 02fea563e5649e442842b271a0612183, type: 3}
       propertyPath: m_RootOrder
       value: 4
