@@ -125568,6 +125568,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3163944687283395465, guid: fa138550f89ade1449748f28e9185791, type: 3}
+      propertyPath: lines.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163944687283395465, guid: fa138550f89ade1449748f28e9185791, type: 3}
       propertyPath: entities.Array.size
       value: 6
       objectReference: {fileID: 0}
@@ -125608,6 +125612,10 @@ PrefabInstance:
       value: 'Brad:'
       objectReference: {fileID: 0}
     - target: {fileID: 3163944687283395465, guid: fa138550f89ade1449748f28e9185791, type: 3}
+      propertyPath: lines.Array.data[3].name
+      value: 'Hades:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163944687283395465, guid: fa138550f89ade1449748f28e9185791, type: 3}
       propertyPath: lines.Array.data[0].sentence
       value: Sorry! Looks like there is only room for one intern after all.
       objectReference: {fileID: 0}
@@ -125618,6 +125626,10 @@ PrefabInstance:
     - target: {fileID: 3163944687283395465, guid: fa138550f89ade1449748f28e9185791, type: 3}
       propertyPath: lines.Array.data[2].sentence
       value: Not if I destroy them first!
+      objectReference: {fileID: 0}
+    - target: {fileID: 3163944687283395465, guid: fa138550f89ade1449748f28e9185791, type: 3}
+      propertyPath: lines.Array.data[3].sentence
+      value: Remember, reapers, no hurting each other!
       objectReference: {fileID: 0}
     - target: {fileID: 9006981580368920501, guid: fa138550f89ade1449748f28e9185791, type: 3}
       propertyPath: m_Name

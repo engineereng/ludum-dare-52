@@ -44,9 +44,10 @@ public class PlayerAttack : MonoBehaviour
         {
             if (!currentlyHitting) {
                 Debug.Log("Hit " + enemy.name);
-                Hurtable hurtable = enemy.GetComponent<Hurtable>();
-                hurtable.TakeDamage(attackDamage);
-                currentlyHitting = true;
+                if (enemy.TryGetComponent<Hurtable>(out Hurtable hurtable)) {
+                    hurtable.TakeDamage(attackDamage);
+                    currentlyHitting = true;
+                }
             }
         }
     }
