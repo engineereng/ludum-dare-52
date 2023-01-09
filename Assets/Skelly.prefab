@@ -107,6 +107,7 @@ MonoBehaviour:
   radius: 0.5
   my_rb: {fileID: 6043219218193786445}
   isMovementSideways: 0
+  animator: {fileID: 0}
 --- !u!114 &2269540616479398939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,8 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
-  hurtableObject: {fileID: 0}
-  sprite: {fileID: 0}
+  hurtableObject: {fileID: 1815346656039639227}
+  sprite: {fileID: 6494445050487310050}
 --- !u!95 &6270513502697199489
 Animator:
   serializedVersion: 5
@@ -225,7 +226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7312331067783164137}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

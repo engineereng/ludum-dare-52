@@ -8,6 +8,8 @@ public class ZombieMove: MonoBehaviour
     public float AttackDamage {
         get {return attackDamage;}
     }
+    
+
     public float moveSpeed = 1.0f;
     public float radius = 0.5f;
     public Rigidbody2D my_rb; 
@@ -15,6 +17,12 @@ public class ZombieMove: MonoBehaviour
     private Collider2D collision;
     private Vector2 currDirection;
     private bool isSoulNearby;
+
+    public Animator animator;
+    private float delay = 0.3f;
+    private bool attackBlocked;
+    bool isMovementPressed;
+     
     void Start()
     {
         my_rb = this.GetComponent<Rigidbody2D>();
@@ -24,7 +32,20 @@ public class ZombieMove: MonoBehaviour
             currDirection = transform.up;
         }
         
-        my_rb.velocity = currDirection * moveSpeed; 
+        my_rb.velocity = currDirection * moveSpeed;
+        
+    }
+    void Update()
+    {
+        if (my_rb.velocity.x == 0 && my_rb.velocity.y == 0)
+        {
+            isMovementPressed = false;
+        }
+        if (my_rb.velocity.x == 1 || my_rb.velocity.y == 1 || my_rb.velocity.x == -1 || my_rb.velocity.y == -1)
+        {
+            isMovementPressed = true;
+        }
+        handleAnimation();
     }
     void FixedUpdate() 
     {
@@ -82,5 +103,74 @@ public class ZombieMove: MonoBehaviour
     void OnDrawGizmosSelected() {
         Gizmos.color = new Color(1.0f, 1.0f, 1.0f, 0.5f);
         Gizmos.DrawSphere(transform.position, radius);
+    }
+
+    void Attack()
+    {
+        if (attackBlocked)
+        {
+            return;
+        }
+        animator.SetTrigger("Attack");
+        attackBlocked = true;
+        StartCoroutine(DelayAttack());
+
+    }
+    private IEnumerator DelayAttack()
+    {
+        yield return new WaitForSeconds(delay);
+        attackBlocked = false;
+    }
+
+    void handleAnimation()
+    {
+        bool Up = animator.GetBool("Up");
+        bool Down = animator.GetBool("Down");
+        bool Left = animator.GetBool("Left");
+        bool Right = animator.GetBool("Right");
+        //bool stopMoving = animator.GetBool("stopMoving");
+        //bool onClick = animator.GetBool("onClick");
+
+        animator.SetBool("Up", false);
+        animator.SetBool("Down", false);
+        animator.SetBool("Left", false);
+        animator.SetBool("Right", false);
+       
+
+        if (isMovementPressed && (my_rb.velocity.x == 0) && (my_rb.velocity.y == 1))
+        {
+            animator.SetBool("Up", true);
+
+            if (collision != null && collision.gameObject.tag == "Soul")
+            {
+                Attack();
+            }
+
+        }
+        else if (isMovementPressed && (my_rb.velocity.x == 0) && (my_rb.velocity.y == -1))
+        {
+            animator.SetBool("Down", true);
+            if (collision != null && collision.gameObject.tag == "Soul")
+            {
+                Attack();
+            }
+        }
+        else if (isMovementPressed && (my_rb.velocity.x == 1) && (my_rb.velocity.y == 0))
+        {
+            animator.SetBool("Right", true);
+            if (collision != null && collision.gameObject.tag == "Soul")
+            {
+                Attack();
+            }
+        }
+        else if (isMovementPressed && (my_rb.velocity.x == -1) && (my_rb.velocity.y == 0))
+        {
+            animator.SetBool("Left", true);
+            if (collision != null && collision.gameObject.tag == "Soul")
+            {
+                Attack();
+            }
+        }
+
     }
 }
