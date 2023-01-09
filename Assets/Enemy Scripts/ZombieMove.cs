@@ -14,15 +14,21 @@ public class ZombieMove: MonoBehaviour
     public float radius = 0.5f;
     public Rigidbody2D my_rb; 
     public bool isMovementSideways;
+    
     private Collider2D collision;
     private Vector2 currDirection;
     private bool isSoulNearby;
+    private string compassDirection;
 
     public Animator animator;
     private float delay = 0.3f;
     private bool attackBlocked;
-    bool isMovementPressed;
-     
+    private bool isMovementPressed;
+
+    bool Up, Down, Left, Right;
+
+    //private string compassDirection;
+    
     void Start()
     {
         my_rb = this.GetComponent<Rigidbody2D>();
@@ -33,6 +39,21 @@ public class ZombieMove: MonoBehaviour
         }
         
         my_rb.velocity = currDirection * moveSpeed;
+        
+
+        Up = animator.GetBool("Up");
+        Down = animator.GetBool("Down");
+        Left = animator.GetBool("Left");
+        Right = animator.GetBool("Right");
+
+
+        animator.SetBool("Up", false);
+        animator.SetBool("Down", false);
+        animator.SetBool("Left", false);
+        animator.SetBool("Right", false);
+
+        compassDirection = giveDirection(my_rb.velocity);
+        handleAnimationAttackSoul(compassDirection);
         
     }
     void Update()
@@ -45,7 +66,7 @@ public class ZombieMove: MonoBehaviour
         {
             isMovementPressed = true;
         }
-        handleAnimation();
+        //handleAnimation();
     }
     void FixedUpdate() 
     {
@@ -58,10 +79,17 @@ public class ZombieMove: MonoBehaviour
             float step = moveSpeed * Time.deltaTime;
             my_rb.velocity = Vector2.zero;
             my_rb.MovePosition(Vector2.MoveTowards(my_rb.position, collision.transform.position, step));
+            Vector2 soulPosition = collision.transform.position;
+            Vector2 direction = (soulPosition - my_rb.position).normalized;
+            compassDirection = giveDirection(direction);
+            handleAnimationAttackSoul(compassDirection);
         } else {
             my_rb.velocity = currDirection * moveSpeed;
+            compassDirection = giveDirection(my_rb.velocity);
+            handleAnimationAttackSoul(compassDirection);
         } 
     }
+
     void OnCollisionEnter2D(Collision2D collision) 
     {
         Debug.Log("collided with something");
@@ -69,6 +97,8 @@ public class ZombieMove: MonoBehaviour
         {
             Debug.Log("collided with wall");
             currDirection = currDirection * -1.0f;
+            compassDirection = giveDirection(my_rb.velocity);
+            handleAnimationAttackSoul(compassDirection);
         }
     }
     void OnTriggerEnter2D(Collider2D collider) {
@@ -94,6 +124,7 @@ public class ZombieMove: MonoBehaviour
                 yield return new WaitForSeconds(1.0f);
                 Debug.Log("Hit " + soul);
                 hurtableSoul.TakeDamage(AttackDamage);
+                Attack();
             } else if (soul.tag == "Dead") {
                 isSoulNearby = false;
             }
@@ -114,63 +145,77 @@ public class ZombieMove: MonoBehaviour
         animator.SetTrigger("Attack");
         attackBlocked = true;
         StartCoroutine(DelayAttack());
-
     }
+
     private IEnumerator DelayAttack()
     {
         yield return new WaitForSeconds(delay);
         attackBlocked = false;
     }
 
-    void handleAnimation()
+    void handleAnimationAttackSoul(string direction)
     {
-        bool Up = animator.GetBool("Up");
-        bool Down = animator.GetBool("Down");
-        bool Left = animator.GetBool("Left");
-        bool Right = animator.GetBool("Right");
-        //bool stopMoving = animator.GetBool("stopMoving");
-        //bool onClick = animator.GetBool("onClick");
-
-        animator.SetBool("Up", false);
-        animator.SetBool("Down", false);
-        animator.SetBool("Left", false);
-        animator.SetBool("Right", false);
-       
-
-        if (isMovementPressed && (my_rb.velocity.x == 0) && (my_rb.velocity.y == 1))
+        if (direction == "Up")
         {
             animator.SetBool("Up", true);
-
-            if (collision != null && collision.gameObject.tag == "Soul")
-            {
-                Attack();
-            }
+            animator.SetBool("Down", false);
+            animator.SetBool("Right", false);
+            animator.SetBool("Left", false);
 
         }
-        else if (isMovementPressed && (my_rb.velocity.x == 0) && (my_rb.velocity.y == -1))
+        else if (direction == "Down")
         {
+            animator.SetBool("Up", false);
             animator.SetBool("Down", true);
-            if (collision != null && collision.gameObject.tag == "Soul")
-            {
-                Attack();
-            }
+            animator.SetBool("Right", false);
+            animator.SetBool("Left", false);
         }
-        else if (isMovementPressed && (my_rb.velocity.x == 1) && (my_rb.velocity.y == 0))
+        else if (direction == "Right")
         {
+            animator.SetBool("Up", false);
+            animator.SetBool("Down", false);
             animator.SetBool("Right", true);
-            if (collision != null && collision.gameObject.tag == "Soul")
-            {
-                Attack();
-            }
+            animator.SetBool("Left", false);
         }
-        else if (isMovementPressed && (my_rb.velocity.x == -1) && (my_rb.velocity.y == 0))
+        else if (direction == "Left")
         {
+            animator.SetBool("Up", false);
+            animator.SetBool("Down", false);
+            animator.SetBool("Right", false);
             animator.SetBool("Left", true);
-            if (collision != null && collision.gameObject.tag == "Soul")
-            {
-                Attack();
+        }
+    }
+
+    public string giveDirection(Vector2 vector) {
+        Vector2 upVector = Vector2.up;
+        Vector2 downVector = -Vector2.up;
+        Vector2 rightVector = Vector2.right;
+        Vector2 leftVector = -Vector2.right;
+
+        Vector2[] compass = {upVector, downVector, rightVector, leftVector};
+
+        float maxDot = -Mathf.Infinity;
+        Vector2 ret = Vector2.zero;
+
+        foreach(Vector2 dir in compass) {
+            float t = Vector2.Dot(vector, dir);
+            if(t > maxDot) {
+                ret = dir;
+                maxDot = t;
             }
         }
 
+        if (ret == upVector) {
+            return "Up";
+        } else if (ret == downVector) {
+            return "Down";
+        } else if (ret == rightVector) {
+            return "Right";
+        } else if (ret == leftVector) {
+            return "Left";
+        } else {
+            return "something went wrong";
+        }
     }
+
 }

@@ -27,9 +27,15 @@ public class Hurtable : MonoBehaviour
     private IEnumerator HurtCoroutine(){
         sprite.color = new Color(1.0f, 1.0f, 1.0f, 0.7f);
         if (health <= 0) {
+            yield return new WaitForSeconds(0.3f);
+            foreach(Transform t in hurtableObject.transform)
+            {
+                t.gameObject.tag = "Dead";
+            }
             hurtableObject.tag = "Dead";
             hurtableObject.layer = deadLayer;
-            yield return new WaitForSeconds(0.3f);
+            sprite.enabled = false;
+            yield return new WaitForSeconds(6.0f);
             Die();
         }
         yield return new WaitForSeconds(0.3f);
@@ -39,8 +45,8 @@ public class Hurtable : MonoBehaviour
 
     private void Die()
     {
+        Destroy(hurtableObject);
         Debug.Log("Dead!");
-        Destroy(hurtableObject, 6.0f); // destroy the object after 6 seconds
-        hurtableObject.SetActive(false); // disable the object
+         // destroy the object after 6 seconds
     }
 }
