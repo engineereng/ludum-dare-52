@@ -37,7 +37,6 @@ public class PlayerMover : MonoBehaviour
     // Update is called once per frame
     void Attack()
     {
-        Debug.Log("attack animation started");
         if (attackBlocked)
         {
             return;
