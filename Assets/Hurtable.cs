@@ -9,11 +9,13 @@ public class Hurtable : MonoBehaviour
     public GameObject hurtableObject;
     public SpriteRenderer sprite;
     private Color defaultColor;
+    private Color redHurtColor;
     private int deadLayer;
     
     void Start() 
     {
         defaultColor = sprite.color;
+        redHurtColor = new Color(1.0f, 0.0f, 0f, 0.7f);
         deadLayer = LayerMask.NameToLayer("Dead");
     }
 
@@ -25,7 +27,7 @@ public class Hurtable : MonoBehaviour
     }
 
     private IEnumerator HurtCoroutine(){
-        sprite.color = new Color(1.0f, 1.0f, 1.0f, 0.7f);
+        sprite.color = redHurtColor;
         if (health <= 0) {
             foreach(Transform t in hurtableObject.transform)
             {
