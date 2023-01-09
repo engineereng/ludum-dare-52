@@ -14,6 +14,7 @@ public class PlayerAttack : MonoBehaviour
     //public Animator animator; // TODO add attack sprite
     public Transform attackPoint;
     public float attackRange;
+    public AudioSource attSoundEffect;
     private float hitDelta = 0.5f; // time between hits
     private float nextHit = 0f; // time when next hit is available
     private float myTime = 0.0f;
@@ -33,6 +34,7 @@ public class PlayerAttack : MonoBehaviour
 
     void Attack()
     {
+        attSoundEffect.Play(0);
         currentlyHitting = false;
         Debug.Log("Attempted attack!");
         // TODO animation

@@ -6,15 +6,20 @@ using UnityEngine.Events;
 public class Goal : MonoBehaviour
 {
     public UnityEvent onGoalTriggered;
+    [SerializeField] private float scoreNeeded = 1f;
+    [SerializeField] private float score = 0f;
 
     void OnTriggerEnter2D (Collider2D other) 
     {
         if (other.TryGetComponent<HasScore>(out var otherHasScore))
         {
-            Debug.Log("Scored: " + otherHasScore.score + "points!");
-            onGoalTriggered.Invoke();
+            float newScore = otherHasScore.score;
+            Debug.Log("Scored: " + newScore + "points!");
+            score += newScore;
             Destroy(other.gameObject); // destroy the moving sheep
-            // TODO maybe spawn a grazing sheep?
+            if (score >= scoreNeeded) {
+                onGoalTriggered.Invoke();
+            }
         }
     }
 }
