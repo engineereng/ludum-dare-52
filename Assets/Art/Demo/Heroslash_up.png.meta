@@ -1,0 +1,4021 @@
+fileFormatVersion: 2
+guid: d0a5e2535dc38c64ba0b470af8e992f5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Heroslash_up_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 845
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281ee3e14df3c16449e080611cd4b82d
+      internalID: 1695077179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 844
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a459969c4b59204698cf0d97ae825af
+      internalID: -1274268177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 844
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 061ed8b2dc05aae4eb4e1a5fbe81a393
+      internalID: 726113888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_3
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 843
+        width: 26
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9bd88a62f3ec144287efd7d76b02497
+      internalID: -69614908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_4
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 840
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3472aa5ebdffb44bde320e6fa25f4c
+      internalID: 780872868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_5
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 841
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2847e89bc0dd464b8ec41aaa603283d
+      internalID: 2146954745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 798
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0d96ece40c85c45bbc958f19de4ae4
+      internalID: -1992199846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 801
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f706ca45c7dc0ec458e8fad6ea3c96df
+      internalID: -1270236384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_8
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 800
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf6b14972019774fa8f8b25c269163c
+      internalID: -1012270895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_9
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 797
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a59718533840ec446a3376e81376e20f
+      internalID: -392804082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_10
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 797
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eaa12f110c410b449c3ea44cf4dee5c
+      internalID: -1681234861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_11
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 796
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21279e3d6ac01b4409684f717c52c60c
+      internalID: -763923429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_12
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 748
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71845b8f89eb774fb8f4821948a845f
+      internalID: 25002155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_13
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 749
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05db7c0a720afa9479e7f46eb9af6a2e
+      internalID: -1546315849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_14
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 749
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5dabe0ec9fb2a49a3d351eb03929d3
+      internalID: -1304257656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_15
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 752
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff30fc3d4579aa84eaafab706a2cb195
+      internalID: 2086356983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_16
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 753
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a454c7b7f47af478d43edd63cfa8aa
+      internalID: 685469546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_17
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 750
+        width: 21
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4443bd3bc165e564a9f95c0f494b6b92
+      internalID: -575394754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_18
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 701
+        width: 29
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac0701bd3909cbb499403e1c80fd842a
+      internalID: -1784051012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 699
+        width: 30
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 137ed990066b67c459d55617c85e5214
+      internalID: -418941328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_20
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 699
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c354711ee968c6468d5c83040b31651
+      internalID: 649767141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_21
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 698
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03528119901a69943a1733a2d53c9db2
+      internalID: 1716790803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_22
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 697
+        width: 30
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628e563a8bbe3994d84fee1f2d959de5
+      internalID: 1564525797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_23
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 696
+        width: 29
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de08737e1e5ba354fa8f24c1fbc27489
+      internalID: 1264392580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_24
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 697
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03bb8170b655414794c4c4c1522c342
+      internalID: 1726545403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_25
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 656
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b62b0b078898c45846641973129621
+      internalID: 307482374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_26
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 664
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5817fd282797e354f98c73e870fe32ae
+      internalID: 800981231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_27
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 665
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5baeaad859d5254097baadcf96290b0
+      internalID: 1198324166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_28
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 654
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146ee7814f5dfd34c862fe07a84642fb
+      internalID: 714268383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_29
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 654
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374b55cd10d0ea0429d4daa25b0cd2e0
+      internalID: 1208668649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_30
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 653
+        width: 18
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbbe94f03fceed44e9ee276f706b846e
+      internalID: 1734486798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_31
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 656
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374b0d065e11df644aceb486dcc87c48
+      internalID: 1581479963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_32
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 657
+        width: 17
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d60cbc1d1fdda66418ec1f3abd287e3d
+      internalID: 1634535966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_33
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 617
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775ef18332f18b147822a54f569d103a
+      internalID: 1132158502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_34
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 626
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb29cd6fafc69ff48902da7eebae3995
+      internalID: 979267259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_35
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 627
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df284abd9f4ae404589a7a6160c47bfe
+      internalID: 207122151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_36
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 616
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b140d8611eb7ff041b3ddf34d485c36e
+      internalID: -1609680026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_37
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 626
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8764a3ac91c45304ab903c99efb76592
+      internalID: 400169653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_38
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 625
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39d4122798544f9459b27061b3b2df83
+      internalID: -295942932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_39
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 616
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61aa9ffe815c73c46a946c5062a18e6d
+      internalID: -1532944146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_40
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 617
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771f5964766490c4a8125ddc6bf28548
+      internalID: -1393575864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_41
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 616
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2978cd86f18195e44a48a65cab9542da
+      internalID: -1441600021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_42
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 615
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5dc202018fe1844cb8c4aa30e44b1dc
+      internalID: 1945042036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_43
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 574
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebada8ebf15b08945a016216f85daa05
+      internalID: 375725007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_44
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 572
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ba5bc2072a6d2448f3a778ccfff985
+      internalID: 1542518614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_45
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 573
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ef839ace65c8e43b312725383f1891
+      internalID: 1460423092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_46
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 572
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6858df2587329d041ac0c008a03b65c4
+      internalID: -1497744231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_47
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 571
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d171c8aca2fd61940b5a2d9ac1875eac
+      internalID: -1490736313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_48
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 570
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e357388ca9788e448a1691b4b372a5df
+      internalID: -970411793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 570
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee44d641a5cd7741ab329692e9afbdd
+      internalID: 815334685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_50
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 569
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d59a79c1b92d1f47af8b19ec50e43b2
+      internalID: 601313604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_51
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 534
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10cc5ce4625ec5640b4b24bd0971f062
+      internalID: 1938771971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_52
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 533
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02683e3772ef7f74697a36433e57d8e4
+      internalID: 751965962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_53
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 532
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd77911427b1f2243b3cf7a5d8cd0ffc
+      internalID: 245189899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_54
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 504
+        width: 28
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22566e6a80ebd34480ecea600d41a00
+      internalID: 1681414433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_55
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 530
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea93225e63e0d3c4395c8003a0db01cf
+      internalID: 784125917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_56
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 529
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe68fb88fc83548418e088aba511150d
+      internalID: 2013664259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_57
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 529
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0939400af5e5fc94f9029e121196e775
+      internalID: -1671347907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_58
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 529
+        width: 14
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efcb1b24f21d0ee42b1396c66d217040
+      internalID: 1017466381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_59
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 495
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1b9ac9c4b381d4080b30495bbae5da
+      internalID: -1629602264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_60
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 505
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a8f99165c4752489e1f79755c2575a
+      internalID: -838060834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_61
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 507
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b3fccb16707884aa5eaba6e20a5abb
+      internalID: -1596399913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_62
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 505
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbe38ea1221dbe459549e327899ef75
+      internalID: 931708816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_63
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 510
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a637dc3b21b3542b331ae159c2356b
+      internalID: -1502894434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_64
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 462
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1efea78a4d96ed45a2b4d3173807830
+      internalID: 347849038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_65
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 495
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 662863532ae9ebb4da39b71cc0927b35
+      internalID: 1644167025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_66
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 494
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42de64102f9846947a066ef5cf185447
+      internalID: 1868707273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_67
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 507
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f919e8613e33e4aa20ceed26854ab4
+      internalID: 1712147025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_68
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 506
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a968775767681245a444350b6f0060e
+      internalID: 334351176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_69
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 462
+        width: 19
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e8d68ea173a6244a383c3b3329caa1
+      internalID: 22136565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_70
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 505
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63c520840e606e45993438089005d4b
+      internalID: -1405561302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_71
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 471
+        width: 43
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff21a4313ddf044a76a7bf0e695dd4
+      internalID: 586507074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_72
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 504
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8fe76a67074d84fb36556713e1c404
+      internalID: 1227783466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_73
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 496
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d6bd7fd46e9684a8294bce66b64edb
+      internalID: -1300558968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_74
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 497
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a26739f02ce7994ab92a5219668c10d
+      internalID: 631506203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_75
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 496
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801e6b18d875f224494d9d2756dde7d4
+      internalID: 1347124436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_76
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 461
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dde25df81d7668e4d9ea3794fa021e16
+      internalID: -1659653890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_77
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 460
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1820e0d162877bf498a489aa2a2fbfe1
+      internalID: -1966017972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_78
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 459
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551041e4bf54d034aaa721a39a9850d7
+      internalID: -458583231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_79
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 459
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8d4918798f98941bd6d061d4cf0a1d
+      internalID: 252204236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_80
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 461
+        width: 33
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e045e38424267a488ba5c5bfc67fa96
+      internalID: -1022928435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_81
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 460
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6b2f8ee13b68d4d8db5a4aed3aabef
+      internalID: 1880933986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_82
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 460
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e679304736e47d4d9e1f8527ab007ac
+      internalID: 1746020017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_83
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 460
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad28d05a5eb62fc4f8f5551e109338f3
+      internalID: 1641166005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_84
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 419
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a779a2bfbcca9f8488d833e61d9d5b3a
+      internalID: 1454510744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_85
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 419
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56093e9c04f524d4a9c5c47de6f9c83a
+      internalID: -126712603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_86
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 418
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c1e9705d3c93f47bcd7f9c5ff701fc
+      internalID: -371904008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_87
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 419
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab6f39a4954ea547b9b62c4ec3b7108
+      internalID: 570624583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_88
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 418
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb1ada68703c294f8f6483b495182e9
+      internalID: -1180390821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_89
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 418
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee7f1347a7705c4793f846afddd3a4b
+      internalID: -1163516863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_90
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 417
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4baa8f0f08116274f908106ced66f9f6
+      internalID: 1110175249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_91
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 417
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf4316edc91b8c418783d17e69e1db2
+      internalID: 2001644722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_92
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 384
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fb9076259942544afc4fca53732a30
+      internalID: 1624718413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_93
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 384
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b147713ff16c624e8610dad15ba18ac
+      internalID: -545855838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_94
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 384
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60432d2564f2281498e6ed70a936e889
+      internalID: -1788549257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_95
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 383
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6029629919cd41444ac45a920c22144f
+      internalID: 1667287627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_96
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 383
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed98c664776123e40a626b7d50eab676
+      internalID: 785596988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_97
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 382
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ef3d75ea6be1c46a78dcbfe9c5c762
+      internalID: -825617495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_98
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 383
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5733d44a25cd35c4cb1818caa839c838
+      internalID: 2118874037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_99
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 382
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b6769ebda07e7f4caf3ab0363ed3e46
+      internalID: -368292055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_100
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 348
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5889d22bf401fd478b3e638acc96c92
+      internalID: -1662491971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_101
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 348
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770af5a4118feb14086faff018559d6a
+      internalID: -1654101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_102
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 346
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd976c9dded55f4cad34457e06a79ea
+      internalID: -936012717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_103
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 346
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 693104294fe9e674698c29dc83352b19
+      internalID: 536644700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_104
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 345
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e881ec96de044d54899097a8acb3293e
+      internalID: 948775697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_105
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 345
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904fd7c80bf878947b63b72b623204fc
+      internalID: 730986008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_106
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 345
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114439fc589ddcf4cbd7497f9949e183
+      internalID: -898348563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_107
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 346
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f0b506b07002e4f8f2f02e2b054359
+      internalID: 986808785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_108
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 308
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ad33ec24db4054cb752a0f46fa2323
+      internalID: 1366494034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_109
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 307
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c65eba9b4d08d204981a415461937e0a
+      internalID: 825758619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_110
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 306
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7144a3ed29b7900469217e93c322a50d
+      internalID: -1707399957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_111
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 306
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836b74dc4d8036847bd8ca037fa85f06
+      internalID: -297004200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_112
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 306
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404e0168dbfe44c4391406ae57b98a42
+      internalID: -360053797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_113
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 307
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b05a95569bda0844ba48fd65c77f5f2
+      internalID: 167740762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_114
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 307
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7462efd34126d334a92e67cc75f94c98
+      internalID: 889830610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_115
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 306
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c1dcf397b7f18449156687ba172c70
+      internalID: 2007954410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_116
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 268
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cca93152aba3e4da13993203c95eb4
+      internalID: -770665985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_117
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 269
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f5372e1b63bc743974d113689a1450
+      internalID: -368116882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_118
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 269
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d19e00eac122724439d9420950d3f8fd
+      internalID: 2082726415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_119
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 269
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32014d1c2848b1542a187491b8b35a2f
+      internalID: -73350196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_120
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 269
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89527df80bcfa644dbb0c0d31b64ee6f
+      internalID: -964881440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_121
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 268
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30571cf3ba23874b9463c470c042e18
+      internalID: 1420655963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_122
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 267
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68907ac348e1e054b903f1829cb1181f
+      internalID: 220247500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_123
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 267
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaaa10471e7743a4da6103aa9a5dd959
+      internalID: 1031230983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_124
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 267
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26be6eb95d15a254da1655265d44cad0
+      internalID: 389080611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_125
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 267
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d70f7f00d97ecc40a51e137289e1f10
+      internalID: -1375688227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_126
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 225
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d242b7ed26bc2c44b9b6eab7c627b823
+      internalID: 727612744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_127
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 225
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e14f60396b7f4f4ab7b3e041a03abb6
+      internalID: 805914525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_128
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 225
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380f8da7a0188734b8220cea0b813f15
+      internalID: -1914556438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_129
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 225
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927d460e29c76af45a333020b6ee6ff4
+      internalID: -1786541043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_130
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 223
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72f82d23eca8c77499d25177b58eaaf5
+      internalID: -1460372909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_131
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 223
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5141216a77eb2744ad9bfd874cd4604
+      internalID: 682201935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_132
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 222
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe32d86228ce8f146b631c73fba321ee
+      internalID: -449494816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_133
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 188
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e4a19cbca99404e89b7b33566ea775
+      internalID: 556625721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_134
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 188
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f6f2ed42c83ef4ab32c199b1078f83
+      internalID: -250263279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_135
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 187
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3b2d94965c466478e1590c7ccca046
+      internalID: -940358033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_136
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 186
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb9f2b7385cb8748976b5df0812886d
+      internalID: 1986686157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_137
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 184
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8b6c15bda30a7429a3f2cb3ce6f44b
+      internalID: 208924040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_138
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 185
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 498de16f9f289114a8135d2e7827680d
+      internalID: -1692626128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_139
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 185
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54052843a80a2f4c93b38097f90cef8
+      internalID: 181729099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_140
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 152
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2855d532c0dce324bb45d3b59262260b
+      internalID: -1884638648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_141
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 152
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8222bbd2e921c0342b051ba6eb5fc0ad
+      internalID: -950082686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_142
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 151
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba7a1815c684294d83a08d8f4ce0925
+      internalID: 982186722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_143
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 151
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ab1860cdae370c428e77984d539f22b
+      internalID: 106599752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_144
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 148
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96a929d7222578f40b22dd4ccd016c79
+      internalID: -1794591709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_145
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 149
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca0fc0ab2e1d8d49a6328a32e133118
+      internalID: -1037513270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_146
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 149
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eca8af0c144ce149a0f6d5728cdc302
+      internalID: -452120590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_147
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 113
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7177a6b8125164a8dfa8fa46d29d93
+      internalID: -2137895703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_148
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 112
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4d264c13730d4489c3e0b21ce99ad2
+      internalID: 1293593961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_149
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 112
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6ae4ba51df422648897e9cc70761342
+      internalID: -980363958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_150
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 111
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92abe9e8ddeac64b8f8886e3d4d8ed3
+      internalID: 339051066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_151
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 111
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c206e4f34ac68e4390dbfea6f5a3a9e
+      internalID: -1361460526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_152
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 110
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a887fbae3f2a8434e88f349e4808a91a
+      internalID: -142613357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_153
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 109
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb77cb54ec778c24b882aba532c56717
+      internalID: -1268713666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_154
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 72
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ab8fcb00abd6f44a2e184e29b8cc14
+      internalID: 117655321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_155
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 73
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d506c9e88db0fcd43b5f1957d2f90486
+      internalID: 145504491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_156
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 73
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926d47166890d104fa86bbf0b04a811b
+      internalID: 1076963315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_157
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 74
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd0013cc706a6440b97bef19e3f78ca
+      internalID: 1429622749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_158
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 74
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af699ef415e5cd840911c5f0aeaa3706
+      internalID: -1221071167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_159
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 75
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a001b31104c3542bee33023f2864e5
+      internalID: -614754996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_160
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 53
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe0a82d07b4f44044930190b509df6a8
+      internalID: -146797483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_161
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 40
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cacb70335106bec46a5a17a70f1b78b4
+      internalID: -1634929817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_162
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 40
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe970c7b5b01fbd479b9866d4d0742b4
+      internalID: 1218409121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_163
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 39
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a98c75f3f844f543aa1503a08b91672
+      internalID: -1364527525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_164
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 40
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f3937f15a3ff0428faac7fc78df1e0
+      internalID: -1498883792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_165
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 40
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e41f1fff9cc244abfcdefb47e6974e
+      internalID: -1081173311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_166
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 39
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e87ddc0b55a0b7949ad31cd959da0350
+      internalID: 1229084611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_167
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 35
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72dca1a304582544db90c821173c6390
+      internalID: -180275797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_168
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 4
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de91fe4401c6b6e408d5960037301142
+      internalID: -1912009998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_169
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 4
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb37d93e3c7fc254ebe8dc106480db75
+      internalID: 1312350796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_170
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 3
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22720e5f4c13aa6468e9aa3e53dd8df5
+      internalID: 127245141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_171
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 4
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b46bf064e0e9ab14daa99ff7842878d0
+      internalID: 464454824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_172
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 4
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37dc180246856ff468d553333314d20b
+      internalID: -1659236626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_173
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 3
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f303dcc22f38f1c4794392a0accae43b
+      internalID: -121351848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Heroslash_up_174
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 1
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f1bd18edf4ca614f9113686bbb363e5
+      internalID: -466822999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Heroslash_up_54: 1681414433
+      Heroslash_up_25: 307482374
+      Heroslash_up_36: -1609680026
+      Heroslash_up_9: -392804082
+      Heroslash_up_131: 682201935
+      Heroslash_up_21: 1716790803
+      Heroslash_up_163: -1364527525
+      Heroslash_up_170: 127245141
+      Heroslash_up_112: -360053797
+      Heroslash_up_65: 1644167025
+      Heroslash_up_87: 570624583
+      Heroslash_up_105: 730986008
+      Heroslash_up_102: -936012717
+      Heroslash_up_142: 982186722
+      Heroslash_up_161: -1634929817
+      Heroslash_up_166: 1229084611
+      Heroslash_up_120: -964881440
+      Heroslash_up_62: 931708816
+      Heroslash_up_106: -898348563
+      Heroslash_up_146: -452120590
+      Heroslash_up_160: -146797483
+      Heroslash_up_53: 245189899
+      Heroslash_up_98: 2118874037
+      Heroslash_up_167: -180275797
+      Heroslash_up_125: -1375688227
+      Heroslash_up_68: 334351176
+      Heroslash_up_85: -126712603
+      Heroslash_up_97: -825617495
+      Heroslash_up_55: 784125917
+      Heroslash_up_58: 1017466381
+      Heroslash_up_12: 25002155
+      Heroslash_up_92: 1624718413
+      Heroslash_up_64: 347849038
+      Heroslash_up_110: -1707399957
+      Heroslash_up_172: -1659236626
+      Heroslash_up_3: -69614908
+      Heroslash_up_118: 2082726415
+      Heroslash_up_78: -458583231
+      Heroslash_up_126: 727612744
+      Heroslash_up_45: 1460423092
+      Heroslash_up_119: -73350196
+      Heroslash_up_88: -1180390821
+      Heroslash_up_1: -1274268177
+      Heroslash_up_5: 2146954745
+      Heroslash_up_136: 1986686157
+      Heroslash_up_127: 805914525
+      Heroslash_up_148: 1293593961
+      Heroslash_up_32: 1634535966
+      Heroslash_up_19: -418941328
+      Heroslash_up_47: -1490736313
+      Heroslash_up_130: -1460372909
+      Heroslash_up_81: 1880933986
+      Heroslash_up_20: 649767141
+      Heroslash_up_164: -1498883792
+      Heroslash_up_129: -1786541043
+      Heroslash_up_144: -1794591709
+      Heroslash_up_124: 389080611
+      Heroslash_up_156: 1076963315
+      Heroslash_up_10: -1681234861
+      Heroslash_up_4: 780872868
+      Heroslash_up_27: 1198324166
+      Heroslash_up_41: -1441600021
+      Heroslash_up_82: 1746020017
+      Heroslash_up_56: 2013664259
+      Heroslash_up_155: 145504491
+      Heroslash_up_103: 536644700
+      Heroslash_up_104: 948775697
+      Heroslash_up_158: -1221071167
+      Heroslash_up_37: 400169653
+      Heroslash_up_108: 1366494034
+      Heroslash_up_150: 339051066
+      Heroslash_up_60: -838060834
+      Heroslash_up_73: -1300558968
+      Heroslash_up_77: -1966017972
+      Heroslash_up_83: 1641166005
+      Heroslash_up_101: -1654101
+      Heroslash_up_114: 889830610
+      Heroslash_up_42: 1945042036
+      Heroslash_up_50: 601313604
+      Heroslash_up_8: -1012270895
+      Heroslash_up_174: -466822999
+      Heroslash_up_140: -1884638648
+      Heroslash_up_128: -1914556438
+      Heroslash_up_122: 220247500
+      Heroslash_up_74: 631506203
+      Heroslash_up_99: -368292055
+      Heroslash_up_86: -371904008
+      Heroslash_up_151: -1361460526
+      Heroslash_up_154: 117655321
+      Heroslash_up_2: 726113888
+      Heroslash_up_76: -1659653890
+      Heroslash_up_79: 252204236
+      Heroslash_up_29: 1208668649
+      Heroslash_up_141: -950082686
+      Heroslash_up_0: 1695077179
+      Heroslash_up_132: -449494816
+      Heroslash_up_100: -1662491971
+      Heroslash_up_6: -1992199846
+      Heroslash_up_94: -1788549257
+      Heroslash_up_15: 2086356983
+      Heroslash_up_49: 815334685
+      Heroslash_up_26: 800981231
+      Heroslash_up_7: -1270236384
+      Heroslash_up_90: 1110175249
+      Heroslash_up_38: -295942932
+      Heroslash_up_66: 1868707273
+      Heroslash_up_135: -940358033
+      Heroslash_up_149: -980363958
+      Heroslash_up_40: -1393575864
+      Heroslash_up_109: 825758619
+      Heroslash_up_72: 1227783466
+      Heroslash_up_52: 751965962
+      Heroslash_up_134: -250263279
+      Heroslash_up_165: -1081173311
+      Heroslash_up_116: -770665985
+      Heroslash_up_143: 106599752
+      Heroslash_up_168: -1912009998
+      Heroslash_up_13: -1546315849
+      Heroslash_up_43: 375725007
+      Heroslash_up_121: 1420655963
+      Heroslash_up_17: -575394754
+      Heroslash_up_23: 1264392580
+      Heroslash_up_111: -297004200
+      Heroslash_up_61: -1596399913
+      Heroslash_up_34: 979267259
+      Heroslash_up_137: 208924040
+      Heroslash_up_24: 1726545403
+      Heroslash_up_28: 714268383
+      Heroslash_up_22: 1564525797
+      Heroslash_up_11: -763923429
+      Heroslash_up_16: 685469546
+      Heroslash_up_69: 22136565
+      Heroslash_up_113: 167740762
+      Heroslash_up_96: 785596988
+      Heroslash_up_59: -1629602264
+      Heroslash_up_33: 1132158502
+      Heroslash_up_51: 1938771971
+      Heroslash_up_35: 207122151
+      Heroslash_up_18: -1784051012
+      Heroslash_up_84: 1454510744
+      Heroslash_up_95: 1667287627
+      Heroslash_up_152: -142613357
+      Heroslash_up_145: -1037513270
+      Heroslash_up_133: 556625721
+      Heroslash_up_171: 464454824
+      Heroslash_up_173: -121351848
+      Heroslash_up_30: 1734486798
+      Heroslash_up_14: -1304257656
+      Heroslash_up_89: -1163516863
+      Heroslash_up_75: 1347124436
+      Heroslash_up_139: 181729099
+      Heroslash_up_153: -1268713666
+      Heroslash_up_46: -1497744231
+      Heroslash_up_80: -1022928435
+      Heroslash_up_115: 2007954410
+      Heroslash_up_117: -368116882
+      Heroslash_up_31: 1581479963
+      Heroslash_up_159: -614754996
+      Heroslash_up_138: -1692626128
+      Heroslash_up_57: -1671347907
+      Heroslash_up_123: 1031230983
+      Heroslash_up_147: -2137895703
+      Heroslash_up_157: 1429622749
+      Heroslash_up_67: 1712147025
+      Heroslash_up_39: -1532944146
+      Heroslash_up_93: -545855838
+      Heroslash_up_162: 1218409121
+      Heroslash_up_169: 1312350796
+      Heroslash_up_107: 986808785
+      Heroslash_up_91: 2001644722
+      Heroslash_up_70: -1405561302
+      Heroslash_up_48: -970411793
+      Heroslash_up_63: -1502894434
+      Heroslash_up_71: 586507074
+      Heroslash_up_44: 1542518614
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
