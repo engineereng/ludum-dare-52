@@ -7,14 +7,13 @@ public class Hurtable : MonoBehaviour
     [SerializeField] public float health = 100;
     public GameObject hurtableObject;
     public SpriteRenderer sprite;
-
+    public bool isDead;
     private Color defaultColor;
-    private int deadLayer;
-    
+    private int frame;
+
     void Start() 
     {
         defaultColor = sprite.color;
-        deadLayer = LayerMask.NameToLayer("Dead");
     }
 
     public void TakeDamage(float damage)
@@ -27,15 +26,13 @@ public class Hurtable : MonoBehaviour
     private IEnumerator HurtCoroutine(){
         sprite.color = new Color(1.0f, 1.0f, 1.0f, 0.7f);
         if (health <= 0) {
-            hurtableObject.tag = "Dead";
-            hurtableObject.layer = deadLayer;
-            yield return new WaitForSeconds(0.3f);
-            sprite.enabled = false;
-            yield return new WaitForSeconds(6.0f);
+            isDead = true;
+            yield return new WaitForSeconds(0.8f);
             Die();
         }
         yield return new WaitForSeconds(0.3f);
         sprite.color = defaultColor;
+        
     }
 
     private void Die()
