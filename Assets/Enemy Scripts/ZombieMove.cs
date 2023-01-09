@@ -107,7 +107,7 @@ public class ZombieMove: MonoBehaviour
     IEnumerator AttackSequence(GameObject soul) {
         Debug.Log("Hit Sequence Started");
         Hurtable hurtableSoul = soul.GetComponent<Hurtable>();
-        while (soul.tag == "Soul" && this.tag == "Enemy") {
+        while (soul.tag == "Soul" && this.tag == "Enemy" && isSoulNearby == true) {
             yield return new WaitForSeconds(1.0f);
             if (soul.tag == "Soul" && this.tag == "Enemy") {
                 Debug.Log("Hit " + soul);

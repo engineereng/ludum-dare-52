@@ -9,6 +9,7 @@ public class DialogueScript : MonoBehaviour
     public List<MonoBehaviour> entities;
     public TextMeshProUGUI textComponent;
     public TextMeshProUGUI nameComponent;
+    public AudioSource nextText;
 
     [SerializeField]
     public Message[] lines;
@@ -18,6 +19,7 @@ public class DialogueScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        nextText.Play(0);
         // TODO: move this to a trigger for when level starts
         dialogueUIBox.SetActive(true);
         textComponent.text = string.Empty;
@@ -31,7 +33,7 @@ public class DialogueScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(Input.anyKeyDown)
         {
             if (textComponent.text == lines[index].sentence)
             {
@@ -41,6 +43,7 @@ public class DialogueScript : MonoBehaviour
             {
                 StopAllCoroutines();
                 textComponent.text = lines[index].sentence;
+                nextText.Stop();
             }
         }
     }
@@ -52,12 +55,14 @@ public class DialogueScript : MonoBehaviour
     }
     IEnumerator TypeLine()
     {
+        nextText.Play(0);
         nameComponent.text = lines[index].name;
         foreach (char c in lines[index].sentence.ToCharArray())
         {
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
+        nextText.Stop();
     }
 
     void NextLine()

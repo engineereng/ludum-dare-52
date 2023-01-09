@@ -9,6 +9,7 @@ TagManager:
   - Soul
   - Obstacles
   - Dead
+  - Music
   layers:
   - Default
   - TransparentFX
@@ -21,27 +22,27 @@ TagManager:
   - Souls
   - Triggers
   - Dead
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   m_SortingLayers:
   - name: Default
     uniqueID: 0
