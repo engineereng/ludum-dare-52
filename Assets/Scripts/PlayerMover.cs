@@ -124,7 +124,7 @@ public class PlayerMover : MonoBehaviour
         { 
         isMovementPressed = true;
         }
-    handleAnimation();
+        handleAnimation();
 
     }
 

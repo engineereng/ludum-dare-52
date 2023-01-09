@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 5005541977793096065}
   - component: {fileID: 6874542052519469101}
   m_Layer: 6
-  m_Name: Zombie
+  m_Name: Skelly
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 8252778415368156824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.107, y: 0.687, z: 0}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
+  m_LocalScale: {x: 0.16, y: 0.16, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -79,8 +79,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dcea51d6065d64246aeec467afeff684, type: 3}
-  m_Color: {r: 0.6550892, g: 0.23429158, b: 0.764151, a: 1}
+  m_Sprite: {fileID: -295431377, guid: f6f098f487eb84e46b855a4cfd2351d9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -110,7 +110,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &8294741298453112798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,9 +125,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 10
   moveSpeed: 0.2
-  radius: 0.5
+  radius: 0.35
   my_rb: {fileID: 5528206847273070155}
   isMovementSideways: 0
+  animator: {fileID: 2372684622997601459}
 --- !u!114 &9044944024951939213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -141,8 +142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 20
-  hurtableObject: {fileID: 0}
-  sprite: {fileID: 0}
+  hurtableObject: {fileID: 8252778415368156824}
+  sprite: {fileID: 6579976250814135205}
 --- !u!95 &2372684622997601459
 Animator:
   serializedVersion: 5
@@ -153,7 +154,7 @@ Animator:
   m_GameObject: {fileID: 8252778415368156824}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 417639b142ec71c4ea7ce337b149b6a0, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -200,4 +201,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.75
