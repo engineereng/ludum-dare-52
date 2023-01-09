@@ -5,7 +5,7 @@ using TMPro;
 
 public class DialogueScript : MonoBehaviour
 {
-    public GameObject messageBox;
+    public GameObject dialogueUIBox;
     public List<MonoBehaviour> entities;
     public TextMeshProUGUI textComponent;
     public TextMeshProUGUI nameComponent;
@@ -19,7 +19,7 @@ public class DialogueScript : MonoBehaviour
     void Start()
     {
         // TODO: move this to a trigger for when level starts
-        messageBox.SetActive(true);
+        dialogueUIBox.SetActive(true);
         textComponent.text = string.Empty;
 
         foreach (MonoBehaviour entity in entities)
@@ -73,7 +73,7 @@ public class DialogueScript : MonoBehaviour
             foreach (MonoBehaviour entity in entities)
                 entity.enabled = true;
 
-            messageBox.SetActive(false);
+            dialogueUIBox.SetActive(false);
         }
     }
 
