@@ -6,9 +6,17 @@ using UnityEngine.SceneManagement;
 public class LoadScene : MonoBehaviour
 {
     public string sceneName;
+    public AudioSource buttonPressSound;
+    public AudioSource buttonHoveredSound;
+
+    public void buttonHovered() 
+    {
+        buttonHoveredSound.Play(0);
+    }
 
     public void buttonPressed()
     {
+        buttonPressSound.Play(0);
         Debug.Log("Button pressed!");
         loadSceneByName(sceneName);
     }
@@ -19,7 +27,7 @@ public class LoadScene : MonoBehaviour
         Application.Quit();
     }
 
-    private void loadSceneByName(string sceneName)
+    public void loadSceneByName(string sceneName)
     {
         Debug.Log("Loading scene: " + sceneName);
         SceneManager.LoadScene(sceneName);
