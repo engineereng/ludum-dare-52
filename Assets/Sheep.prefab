@@ -176,7 +176,6 @@ GameObject:
   - component: {fileID: 2712203939195226481}
   - component: {fileID: 5666979971585206773}
   - component: {fileID: 6171581157628801624}
-  - component: {fileID: 1448765445}
   - component: {fileID: 1771796070}
   - component: {fileID: 1771796071}
   m_Layer: 8
@@ -372,33 +371,6 @@ MonoBehaviour:
   health: 30
   hurtableObject: {fileID: 2712203939195226490}
   sprite: {fileID: 2712203939195226491}
-  isDead: 0
---- !u!61 &1448765445
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2712203939195226490}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.16}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 1
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
-  m_EdgeRadius: 0
 --- !u!114 &1771796070
 MonoBehaviour:
   m_ObjectHideFlags: 0
