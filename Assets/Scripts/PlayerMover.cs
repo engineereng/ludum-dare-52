@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.InputSystem;
 
 public class PlayerMover : MonoBehaviour
 {
@@ -23,54 +23,92 @@ public class PlayerMover : MonoBehaviour
     public Transform attackPoint;
     public Transform player;
 
+    private float delay = 0.3f;
+    private bool attackBlocked;
 
     void Awake()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
         animator = gameObject.GetComponent<Animator>();
 
-       
+        
         rb.freezeRotation = true;
     }
     // Update is called once per frame
+    void Attack()
+    {
+        if (attackBlocked)
+        {
+            return;
+        }
+        animator.SetTrigger("Attack");
+        attackBlocked = true;
+        StartCoroutine(DelayAttack());
+
+    }
+    private IEnumerator DelayAttack()
+    {
+        yield return new WaitForSeconds(delay);
+        attackBlocked = false;
+    }
+
     void handleAnimation()
     {
         bool walkUp = animator.GetBool("walkUp");
         bool walkDown = animator.GetBool("walkDown");
         bool walkLeft = animator.GetBool("walkLeft");
         bool walkRight = animator.GetBool("walkRight");
-        bool stopMoving = animator.GetBool("stopMoving");
+        //bool stopMoving = animator.GetBool("stopMoving");
+        //bool onClick = animator.GetBool("onClick");
 
-        if (isMovementPressed && (currentMovementInput.x == 0)  && (currentMovementInput.y == 1 ))
+        animator.SetBool("walkUp", false);
+        animator.SetBool("walkDown", false);
+        animator.SetBool("walkLeft", false);
+        animator.SetBool("walkRight", false);
+
+        Mouse mouse = Mouse.current;
+        
+        
+
+        if (isMovementPressed && (currentMovementInput.x == 0) && (currentMovementInput.y == 1))
         {
             animator.SetBool("walkUp", true);
             attackPoint.position = new Vector3(player.position.x, player.position.y + 0.2f, 0f);
+
+            if (mouse.leftButton.wasPressedThisFrame)
+            {
+                Attack();
+            }
+            
         }
         else if (isMovementPressed && (currentMovementInput.x == 0) && (currentMovementInput.y == -1))
         {
             animator.SetBool("walkDown", true);
             attackPoint.position = new Vector3(player.position.x, player.position.y - 0.2f, 0f);
+            if (mouse.leftButton.wasPressedThisFrame)
+            {
+                Attack();
+            }
         }
         else if (isMovementPressed && (currentMovementInput.x == 1) && (currentMovementInput.y == 0))
         {
             animator.SetBool("walkRight", true);
             attackPoint.position = new Vector3(player.position.x + 0.2f, player.position.y, 0f);
+            if (mouse.leftButton.wasPressedThisFrame)
+            {
+                Attack();
+            }
         }
         else if (isMovementPressed && (currentMovementInput.x == -1) && (currentMovementInput.y == 0))
         {
             animator.SetBool("walkLeft", true);
             attackPoint.position = new Vector3(player.position.x - 0.2f, player.position.y, 0f);
+            if (mouse.leftButton.wasPressedThisFrame)
+            {
+                Attack();
+            }
         }
-        else if (!isMovementPressed)
-        {
-            animator.SetBool("walkUp", false);
-            animator.SetBool("walkDown", false);
-            animator.SetBool("walkLeft", false);
-            animator.SetBool("walkRight", false);
-            animator.SetBool("stopMoving", true);
-            
-
-        }
+        
     }
 
     void Update()
