@@ -129113,10 +129113,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2712203939195226480, guid: 30a10b74e0a75144dabe18521726a69f, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2712203939195226490, guid: 30a10b74e0a75144dabe18521726a69f, type: 3}
       propertyPath: m_Name
       value: Sheep
