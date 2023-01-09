@@ -8,6 +8,8 @@ public class Hurtable : MonoBehaviour
     [SerializeField] public float health = 100;
     public GameObject hurtableObject;
     public SpriteRenderer sprite;
+    public AudioSource damageSoundEffect;
+    public AudioSource deathSoundEffect;
     private Color defaultColor;
     private Color redHurtColor;
     private int deadLayer;
@@ -28,7 +30,9 @@ public class Hurtable : MonoBehaviour
 
     private IEnumerator HurtCoroutine(){
         sprite.color = redHurtColor;
+        damageSoundEffect.Play(0);
         if (health <= 0) {
+            deathSoundEffect.Play(0);
             foreach(Transform t in hurtableObject.transform)
             {
                 t.gameObject.tag = "Dead";
