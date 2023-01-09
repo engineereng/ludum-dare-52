@@ -126431,25 +126431,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 808313620903127350, guid: 05f4779284284ab42b2afef308935709, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 808313621149747667, guid: 05f4779284284ab42b2afef308935709, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 808313621884486993, guid: 05f4779284284ab42b2afef308935709, type: 3}
       propertyPath: m_Name
       value: Reaper
-      objectReference: {fileID: 0}
-    - target: {fileID: 808313621884486993, guid: 05f4779284284ab42b2afef308935709, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 808313621884486993, guid: 05f4779284284ab42b2afef308935709, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 808313621884486999, guid: 05f4779284284ab42b2afef308935709, type: 3}
       propertyPath: m_RootOrder
