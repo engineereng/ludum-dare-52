@@ -27,11 +27,11 @@ public class Hurtable : MonoBehaviour
     private IEnumerator HurtCoroutine(){
         sprite.color = new Color(1.0f, 1.0f, 1.0f, 0.7f);
         if (health <= 0) {
-            yield return new WaitForSeconds(0.3f);
             foreach(Transform t in hurtableObject.transform)
             {
                 t.gameObject.tag = "Dead";
             }
+            yield return new WaitForSeconds(0.3f);
             hurtableObject.tag = "Dead";
             hurtableObject.layer = deadLayer;
             sprite.enabled = false;

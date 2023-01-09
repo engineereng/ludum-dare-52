@@ -108,12 +108,12 @@ public class ZombieMove: MonoBehaviour
         Debug.Log("Hit Sequence Started");
         Hurtable hurtableSoul = soul.GetComponent<Hurtable>();
         while (soul.tag == "Soul" && this.tag == "Enemy") {
-            if (soul.tag == "Soul") {
-                yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(1.0f);
+            if (soul.tag == "Soul" && this.tag == "Enemy") {
                 Debug.Log("Hit " + soul);
                 hurtableSoul.TakeDamage(AttackDamage);
                 Attack();
-            } else if (soul.tag == "Dead") {
+            } else if (soul.tag == "Dead" || this.tag == "Dead") {
                 isSoulNearby = false;
             }
         }
