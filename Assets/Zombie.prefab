@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6874542052519469101}
   m_Layer: 6
   m_Name: Zombie
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -127,6 +127,7 @@ MonoBehaviour:
   moveSpeed: 0.2
   radius: 0.5
   my_rb: {fileID: 5528206847273070155}
+  isMovementSideways: 0
 --- !u!114 &9044944024951939213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +143,6 @@ MonoBehaviour:
   health: 20
   hurtableObject: {fileID: 0}
   sprite: {fileID: 0}
-  isDead: 0
 --- !u!95 &2372684622997601459
 Animator:
   serializedVersion: 5

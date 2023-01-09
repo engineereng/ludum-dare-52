@@ -11,15 +11,20 @@ public class ZombieMove: MonoBehaviour
     public float moveSpeed = 1.0f;
     public float radius = 0.5f;
     public Rigidbody2D my_rb; 
+    public bool isMovementSideways;
     private Collider2D collision;
     private Vector2 currDirection;
     private bool isSoulNearby;
     void Start()
     {
         my_rb = this.GetComponent<Rigidbody2D>();
-        currDirection = transform.up;
-        my_rb.velocity = currDirection * moveSpeed;
+        if (isMovementSideways) {
+            currDirection = transform.right;
+        } else {
+            currDirection = transform.up;
+        }
         
+        my_rb.velocity = currDirection * moveSpeed; 
     }
     void FixedUpdate() 
     {
