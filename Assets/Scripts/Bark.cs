@@ -35,7 +35,7 @@ public class Bark : MonoBehaviour
             barking = true;
             // animate bark
             // changes to a red aura
-            barkRadius.color = new Color(barkRadius.color.r + 1.0f, barkRadius.color.g - 0.7f, barkRadius.color.b - 1.0f, 0.2f);
+            barkRadius.color = new Color(barkRadius.color.r + 1.0f, barkRadius.color.g - 0.7f, barkRadius.color.b - 1.0f, 0.5f);
             nextBark = nextBark - myTime;
             myTime = 0.0f;
             // Debug.Log("Barking: " + barking);
