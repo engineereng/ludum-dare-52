@@ -3,19 +3,25 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Map
+  - Soul
+  - Obstacles
+  - Dead
+  - Music
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Enemies
+  - Obstacles
+  - Souls
+  - Triggers
+  - Dead
   - 
   - 
   - 
